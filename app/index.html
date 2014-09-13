@@ -13,6 +13,8 @@
   <!-- endbower -->
   <!-- endbuild -->
 
+  <!-- google fonts: lato -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,400,700' rel='stylesheet' type='text/css'>
   <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
@@ -28,111 +30,123 @@
 
   <div class="container">
     <div class="header">
-      <nav class="top-bar row fixed nav" data-topbar="">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">bachmeierChiro</a></h1>
-          </li>
-          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-        </ul>
-        <section class="top-bar-section">
-          <!-- Right Nav Section -->
-          <ul class="right">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#space">Space</a></li>
-            <li><a href="#contact">Contact</a></li>
+      <div class="fixed">
+        <nav class="top-bar row nav" data-topbar="">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#">bachmeierChiro</a></h1>
+            </li>
+            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
           </ul>
-        </section>
-      </nav>
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#space">Space</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </section>
+        </nav>
+      </div>
     </div> <!-- end .header -->
 
-    <div id="home" class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h1>Take control of your health</h1>
-          <h1>Now!</h1>
+    <div id="home" class="section">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <h1>Take control of your health</h1>
+            <h1>Now!</h1>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="services" class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h1>Services</h1>
-          <h2 class="lead">We all have an inherent, innate ability to <span>heal ourselves</span>, this is the chiropractic philosophy.</h2>
-          <p>We all have an inherent, innate ability to heal ourselves, this is the Chiropractic philosophy. Sometimes we just need a little help or guidance to get our of our own way and let that ability do its thing. Are you ready to get out of pain? Ready to improve your function and quality of life? Ready to take control or your own health?</p>
-          <p>Dr. Dixie is ready meet you where you are and help you get where you want to be.</p>
-        </div>
-        <ul class="small-block-grid-4">
-          <li>
-            <div class="card">
-              <div class="header circle">
-                <div class="icon-massage"></div>
+    <div id="services" class="section">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <h1>Services</h1>
+            <h2 class="lead">We all have an inherent, innate ability to <em>heal ourselves</em>, this is the chiropractic philosophy.</h2>
+            <p>We all have an inherent, innate ability to heal ourselves, this is the Chiropractic philosophy. Sometimes we just need a little help or guidance to get our of our own way and let that ability do its thing. Are you ready to get out of pain? Ready to improve your function and quality of life? Ready to take control or your own health?</p>
+            <p>Dr. Dixie is ready meet you where you are and help you get where you want to be.</p>
+          </div>
+          <div class="row small-block-grid-4">
+            <div class="large-3 medium-3 small-12 columns">
+              <div class="card">
+                <div class="header circle">
+                  <div class="media icon-massage"></div>
+                </div>
+                <h3 class="title">Soft Tissue Treatment</h3>
+                <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
               </div>
-              <h3 class="title">Soft Tissue Treatment</h3>
-              <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="header circle">
-                <div class="icon-chiropractic"></div>
+            <div class="large-3 medium-3 small-12 columns">
+              <div class="card">
+                <div class="header circle">
+                  <div class="media icon-chiropractic"></div>
+                </div>
+                <h3 class="title">Chiropractic Care</h3>
+                <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
               </div>
-              <h3 class="title">Soft Tissue Treatment</h3>
-              <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="header circle">
-                <div class="icon-exercise"></div>
+            <div class="large-3 medium-3 small-12 columns">
+              <div class="card">
+                <div class="header circle">
+                  <div class="media icon-exercise"></div>
+                </div>
+                <h3 class="title">Corrective Exercise</h3>
+                <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
               </div>
-              <h3 class="title">Soft Tissue Treatment</h3>
-              <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
-          </li>
-          <li>
-            <div class="card">
-              <div class="header circle">
-                <div class="icon-enhancement"></div>
+            <div class="large-3 medium-3 small-12 columns">
+              <div class="card">
+                <div class="header circle">
+                  <div class="media icon-enhancement"></div>
+                </div>
+                <h3 class="title">Athletic Enhancement</h3>
+                <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
               </div>
-              <h3 class="title">Soft Tissue Treatment</h3>
-              <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div id="about" class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h1>'Allo, 'Allo!</h1>
-          <p class="lead">Always a pleasure scaffolding your apps.</p>
-          <p><a class="button" href="#">Splendid!</a></p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="space" class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h1>'Allo, 'Allo!</h1>
-          <p class="lead">Always a pleasure scaffolding your apps.</p>
-          <p><a class="button" href="#">Splendid!</a></p>
+    <div id="about" class="section">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <h1>'Allo, 'Allo!</h1>
+            <p class="lead">Always a pleasure scaffolding your apps.</p>
+            <p><a class="button" href="#">Splendid!</a></p>
+          </div>
         </div>
       </div>
     </div>
 
-    <div id="contact" class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h1>'Allo, 'Allo!</h1>
-          <p class="lead">Always a pleasure scaffolding your apps.</p>
-          <p><a class="button" href="#">Splendid!</a></p>
+    <div id="space" class="section">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <h1>'Allo, 'Allo!</h1>
+            <p class="lead">Always a pleasure scaffolding your apps.</p>
+            <p><a class="button" href="#">Splendid!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="section">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <h1>'Allo, 'Allo!</h1>
+            <p class="lead">Always a pleasure scaffolding your apps.</p>
+            <p><a class="button" href="#">Splendid!</a></p>
+          </div>
         </div>
       </div>
     </div>
