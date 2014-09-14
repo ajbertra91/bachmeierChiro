@@ -1,0 +1,91 @@
+/* CONTACT */
+#contact {
+  background: $teal;
+  background: url("../images/bg-contact.jpg") no-repeat 50% 0;
+  .panel {
+    background: transparent;
+    border: 0;
+    h1,p {
+      color: $white;
+    }
+  }
+  .information, .form {
+    h2,h3, p {
+      color: $white;
+      text-align: left;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 100;
+    }
+  }
+  .information {
+    h3 {
+      color: $teal-light;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .phone {
+      margin: 113px 0 0;
+    }
+    .title {
+      color: $teal-light;
+      margin-right: 20px;
+      &.fax {
+        margin-right: 33px;
+      }
+    }
+    .value a {
+      color: $white;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .form {
+    input[type="text"],
+    textarea {
+      background: $teal-dark;
+      border-radius: 4px;
+      border: 0;
+      box-shadow: none;
+      color: $teal;
+      &::-webkit-input-placeholder {
+        color: $teal;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $teal;  
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+        color: $teal;  
+      }
+
+      &:-ms-input-placeholder {  
+        color: $teal;  
+      }
+      &:active, &:focus {
+        background: $white;
+        color: black;
+      }
+    }
+    textarea {
+      height: 168px;
+    }
+    input[type="submit"].button {
+      background: $pink-button;
+      border-radius: 4px;
+      border-bottom: 3px solid $pink-medium;
+      text-transform: uppercase;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 200px;
+      &:hover {
+        margin-top: 3px;
+        border: 0;
+      }
+    }
+  }
+}
