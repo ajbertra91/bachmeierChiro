@@ -1,3 +1,6 @@
+body {
+  background: #999; }
+
 body, h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -222,13 +225,17 @@ h2 {
       cursor: pointer;
       display: inline-block;
       height: 31px;
-      width: 31px;
-      text-indent: -119988px; }
-      #about .card .icon.facebook {
+      width: 31px; }
+      #about .card .icon a {
+        display: inline-block;
+        text-indent: -119988px;
+        height: 31px;
+        width: 31px; }
+      #about .card .icon.facebook a {
         background: url("../images/facebook.png") no-repeat 0 0;
         background-size: 100% auto;
         margin-right: 8px; }
-      #about .card .icon.linkedin {
+      #about .card .icon.linkedin a {
         background: url("../images/linkedin.png") no-repeat 0 0;
         background-size: 100% auto; }
       #about .card .icon:hover {
@@ -287,8 +294,6 @@ h2 {
     color: #c0dfda;
     font-size: 12px;
     font-weight: 700; }
-  #contact .information .phone {
-    margin: 113px 0 0; }
   #contact .information .title {
     color: #c0dfda;
     margin-right: 20px; }

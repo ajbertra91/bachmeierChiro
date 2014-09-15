@@ -72,13 +72,18 @@
       display: inline-block;
       height: 31px;
       width: 31px;
-      text-indent: -119988px;
-      &.facebook {
+      a {
+        display: inline-block;
+        text-indent: -119988px;
+        height: 31px;
+        width: 31px;
+      }
+      &.facebook a {
         background: url("../images/facebook.png") no-repeat 0 0;
         background-size: 100% auto;
         margin-right: 8px;
       }
-      &.linkedin {
+      &.linkedin a {
         background: url("../images/linkedin.png") no-repeat 0 0;
         background-size: 100% auto;
       }
