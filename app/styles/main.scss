@@ -11,17 +11,21 @@ $pink-light: #ffcccf;
 $pink-medium: #c8535a;
 $purple: #665464;
 $purple-lightest: #e5d1e3;
+$purple-light: #91778e;
 $green: #a1ca6c;
+$green-dark: #81a256;
 $teal: #75b4aa;
+$teal-lightest: #82c8bd;
 $teal-light: #c0dfda;
 $teal-dark: #68a097;
 $blue-lightest: #74c7d5;
+$yellow: #f5c149;
 
 body, h1,h2,h3,h4,h5,h6 {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   text-align: center;
-  p {
+  p, li {
     font-size: 10px;
   }
 }
@@ -71,6 +75,7 @@ h2 {
 
 @import "_home.scss";
 @import "_about.scss";
+@import "_space.scss";
 @import "_contact.scss";
 
 /* SPACE */

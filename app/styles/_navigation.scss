@@ -33,12 +33,43 @@
   }
 }
 .top-bar-section li:not(.has-form) a:not(.button) {
+  transition: background-color 0.2s ease;
   background: transparent;
 }
+
+/* Special Nav Colors */
 /*home*/
-.top-bar-section li:not(.has-form) a:not(.button):hover {
+.top-bar-section.home li:not(.has-form) a:not(.button):hover {
   background: $blue-lightest;
 }
-.top-bar-section li.active:not(.has-form) a:not(.button) {
+.top-bar-section.home li.active:not(.has-form) a:not(.button) {
   background: $blue-lightest;
+}
+/*services*/
+.top-bar-section.services li:not(.has-form) a:not(.button):hover {
+  background: $pink-medium;
+}
+.top-bar-section.services li.active:not(.has-form) a:not(.button) {
+  background: $pink-medium;
+}
+/*about*/
+.top-bar-section.about li:not(.has-form) a:not(.button):hover {
+  background: $purple-light;
+}
+.top-bar-section.about li.active:not(.has-form) a:not(.button) {
+  background: $purple-light;
+}
+/*space*/
+.top-bar-section.space li:not(.has-form) a:not(.button):hover {
+  background: $green;
+}
+.top-bar-section.space li.active:not(.has-form) a:not(.button) {
+  background: $green;
+}
+/*contact*/
+.top-bar-section.contact li:not(.has-form) a:not(.button):hover {
+  background: $teal-lightest;
+}
+.top-bar-section.contact li.active:not(.has-form) a:not(.button) {
+  background: $teal-lightest;
 }

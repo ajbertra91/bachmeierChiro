@@ -1,0 +1,48 @@
+/* SPACE */
+#space {
+  background: $green-dark;
+  background: url("../images/bg-space.jpg") no-repeat 50% 0;
+  .panel {
+    background: transparent;
+    border: 0;
+    h1,p, li {
+      color: $white;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    ul {
+      display: inline-block;
+    }
+  }
+  .spaces {
+    h3 {
+      color: $white;
+      float: left;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .tabs {
+      float: right;
+      dd, .tab-title {
+        > a {
+          background: transparent;
+          border-radius: 4px;
+          color: $white;
+          padding: 5px 10px;
+          min-width: 80px;
+          font-size: 12px;
+          transition: background-color 0.2s ease;
+          &:hover {
+            background: $yellow;
+          }
+        }
+        &.active {
+          > a {
+            background: $yellow;
+          }
+        }
+      }
+    }
+  }
+}
