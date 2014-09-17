@@ -114,51 +114,28 @@ h2 {
 #home {
   background: gray;
   background: url("../images/dad-daughter.jpg") no-repeat 50% 0; }
+  #home .panel {
+    background: #74c7d5;
+    border: 0;
+    margin-top: 400px;
+    margin-bottom: 300px; }
+    #home .panel .title-left, #home .panel .title-right {
+      color: #ffffff;
+      display: inline-block; }
+    #home .panel .title-left {
+      text-align: right; }
+    #home .panel .title-right {
+      font-size: 70px;
+      font-weight: 700;
+      text-align: left; }
 
-/* SERVICES */
-#services {
-  background: #c45158;
-  background: url("../images/bg-services.jpg") no-repeat 50% 0; }
-  #services h1, #services h2, #services h3, #services p {
-    color: #ffffff; }
-  #services .panel {
-    background: transparent;
-    border: 0; }
-    #services .panel .lead em, #services .panel p {
-      color: #ffcccf;
-      font-style: normal; }
-  #services .card {
-    background: #c8535a; }
-  #services [class*="icon-"] {
-    position: absolute; }
-    #services [class*="icon-"][class$="-massage"] {
-      background: url("../images/massage.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 40px;
-      width: 76px;
-      top: 26px;
-      left: 8px; }
-    #services [class*="icon-"][class$="-chiropractic"] {
-      background: url("../images/chiropractic.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 68px;
-      width: 40px;
-      top: 15px;
-      left: 28px; }
-    #services [class*="icon-"][class$="-exercise"] {
-      background: url("../images/exercise.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 67px;
-      width: 45px;
-      top: 13px;
-      left: 27px; }
-    #services [class*="icon-"][class$="-enhancement"] {
-      background: url("../images/enhancement.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 70px;
-      width: 54px;
-      top: 16px;
-      left: 21px; }
+@media only screen and (max-width: 40em) {
+  #home {
+    background-size: 100% auto;
+    background-position: 0 10%; }
+    #home .panel {
+      margin-top: 150px;
+      margin-bottom: 150px; } }
 
 /* ABOUT */
 #about {
@@ -241,6 +218,52 @@ h2 {
       #about .card .icon:hover {
         -webkit-transform: scale(1.2);
         transform: scale(1.2); }
+
+/* SERVICES */
+#services {
+  background: #b34a4f; }
+  #services .row {
+    background: url("../images/bg-services.jpg") no-repeat 50% 0; }
+  #services h1, #services h2, #services h3, #services p {
+    color: #ffffff; }
+  #services .panel {
+    background: transparent;
+    border: 0; }
+    #services .panel .lead em, #services .panel p {
+      color: #ffcccf;
+      font-style: normal; }
+  #services .card {
+    background: #c8535a; }
+  #services [class*="icon-"] {
+    position: absolute; }
+    #services [class*="icon-"][class$="-massage"] {
+      background: url("../images/massage.png") no-repeat 0 0;
+      background-size: 100% auto;
+      height: 40px;
+      width: 76px;
+      top: 26px;
+      left: 8px; }
+    #services [class*="icon-"][class$="-chiropractic"] {
+      background: url("../images/chiropractic.png") no-repeat 0 0;
+      background-size: 100% auto;
+      height: 68px;
+      width: 40px;
+      top: 15px;
+      left: 28px; }
+    #services [class*="icon-"][class$="-exercise"] {
+      background: url("../images/exercise.png") no-repeat 0 0;
+      background-size: 100% auto;
+      height: 67px;
+      width: 45px;
+      top: 13px;
+      left: 27px; }
+    #services [class*="icon-"][class$="-enhancement"] {
+      background: url("../images/enhancement.png") no-repeat 0 0;
+      background-size: 100% auto;
+      height: 70px;
+      width: 54px;
+      top: 16px;
+      left: 21px; }
 
 /* SPACE */
 #space {

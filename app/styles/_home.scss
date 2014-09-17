@@ -3,68 +3,35 @@
   background: gray;
   background: url("../images/dad-daughter.jpg") no-repeat 50% 0;
   .panel {
-    /*@media #{$small-only} {
-      margin: 100px auto;
+    background: $blue-lightest;
+    //background: rgba(255,255,255,0.8);
+    border: 0;
+    margin-top: 400px;
+    margin-bottom: 300px;
+    .title-left,
+    .title-right {
+      color: $white;
+      //color: $blue-lightest;
+      display: inline-block;
     }
-    @media #{$medium-only} {
-      margin: 200px auto;
+    .title-left {
+      text-align: right;
     }
-    @media #{$large-up} {
-      margin: 300px auto;
-    }*/
+    .title-right {
+      font-size: 70px;
+      font-weight: 700;
+      text-align: left;
+    }
   }
 }
-/* SERVICES */
-#services {
-  background: $pink;
-  background: url("../images/bg-services.jpg") no-repeat 50% 0;
-  h1,h2,h3,p {
-    color: $white;
-  }
-  .panel {
-    background: transparent;
-    border: 0;
-    .lead em, p {
-      color: $pink-light;
-      font-style: normal;
-    }
-  }
-  .card {
-    background: $pink-medium;
-  }
-  [class*="icon-"] {
-    position: absolute;
-    &[class$="-massage"] {
-      background: url("../images/massage.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 40px;
-      width: 76px;
-      top: 26px;
-      left: 8px;
-    }
-    &[class$="-chiropractic"] {
-      background: url("../images/chiropractic.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 68px;
-      width: 40px;
-      top: 15px;
-      left: 28px;
-    }
-    &[class$="-exercise"] {
-      background: url("../images/exercise.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 67px;
-      width: 45px;
-      top: 13px;
-      left: 27px;
-    }
-    &[class$="-enhancement"] {
-      background: url("../images/enhancement.png") no-repeat 0 0;
-      background-size: 100% auto;
-      height: 70px;
-      width: 54px;
-      top: 16px;
-      left: 21px;
+
+@media #{$small-only} {
+  #home {
+    background-size: 100% auto;
+    background-position: 0 10%;
+    .panel {
+      margin-top: 150px;
+      margin-bottom: 150px;
     }
   }
 }
