@@ -1,5 +1,6 @@
 $(function() {
-
+  console.log('main loaded');
+  $(document).foundation();
   var nav = $('.top-bar-section');
   var navLinks = nav.find('li');
   $(".home-btn").click(function() {
