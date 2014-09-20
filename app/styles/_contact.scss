@@ -1,7 +1,7 @@
 /* CONTACT */
 #contact {
   background: $teal;
-  background: url("../images/bg-contact.jpg") no-repeat 50% 0;
+  background-size: 100% auto;
   .panel {
     background: transparent;
     border: 0;
@@ -87,5 +87,11 @@
         border: 0;
       }
     }
+  }
+}
+
+@media #{$medium-up} {
+  #contact {
+    background: url("../images/bg-contact.jpg") no-repeat 50% 0;
   }
 }

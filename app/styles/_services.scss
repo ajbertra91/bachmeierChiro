@@ -1,9 +1,7 @@
 /* SERVICES */
 #services {
   background: $pink-dark;
-  .row {
-    background: url("../images/bg-services.jpg") no-repeat 50% 0;
-  }
+  background-size: 100% auto;
   h1,h2,h3,p {
     color: $white;
   }
@@ -52,5 +50,11 @@
       top: 16px;
       left: 21px;
     }
+  }
+}
+
+@media #{$medium-up} {
+  #services {
+    background: url("../images/bg-services.jpg") no-repeat 50% 0;
   }
 }

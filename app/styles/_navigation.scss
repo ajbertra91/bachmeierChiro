@@ -1,6 +1,6 @@
 /* NAVIGATION */
 .top-bar {
-  background: transparent;
+  height: 60px;
   .name h1 a {
     position: relative;
     padding-top: 6px;
@@ -25,16 +25,21 @@
 }
 .top-bar-section {
   ul li {
-    background: transparent;
+    /*background: transparent;*/
     > a {
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
+      height: 60px;
+      /*border-bottom-left-radius: 6px;*/
+      /*border-bottom-right-radius: 6px;*/
     }
   }
 }
+.top-bar-section li.active:not(.has-form) a:not(.button),
+.top-bar-section li:not(.has-form) a:not(.button) {
+  line-height: 60px;
+}
 .top-bar-section li:not(.has-form) a:not(.button) {
   transition: background-color 0.2s ease;
-  background: transparent;
+  /*background: transparent;*/
 }
 
 /* Special Nav Colors */

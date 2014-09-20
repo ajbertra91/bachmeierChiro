@@ -12,11 +12,17 @@ h1, h3 {
   font-weight: 100;
   text-transform: uppercase; }
 
-h1 {
-  font-size: 30px; }
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 20px; }
+  h2 {
+    font-size: 16px; } }
 
-h2 {
-  font-size: 14px; }
+@media only screen and (min-width:40.063em) {
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 14px; } }
 
 /* CARD COMPONENT */
 .card {
@@ -40,7 +46,7 @@ h2 {
 
 /* NAVIGATION */
 .top-bar {
-  background: transparent; }
+  height: 60px; }
   .top-bar .name h1 a {
     position: relative;
     padding-top: 6px;
@@ -60,14 +66,18 @@ h2 {
       font-size: 25px; }
 
 .top-bar-section ul li {
-  background: transparent; }
+  /*background: transparent;*/ }
   .top-bar-section ul li > a {
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px; }
+    height: 60px;
+    /*border-bottom-left-radius: 6px;*/
+    /*border-bottom-right-radius: 6px;*/ }
+
+.top-bar-section li.active:not(.has-form) a:not(.button), .top-bar-section li:not(.has-form) a:not(.button) {
+  line-height: 60px; }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   transition: background-color 0.2s ease;
-  background: transparent; }
+  /*background: transparent;*/ }
 
 /* Special Nav Colors */
 /*home*/
@@ -106,19 +116,21 @@ h2 {
   background: #82c8bd; }
 
 /* SECTIONS */
-.section {
-  padding-top: 60px;
-  padding-bottom: 120px; }
+@media only screen and (min-width:40.063em) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 120px; } }
 
 /* HOME */
 #home {
   background: gray;
-  background: url("../images/dad-daughter.jpg") no-repeat 50% 0; }
+  background: url("../images/dad-daughter.jpg") no-repeat 50% 0;
+  background-size: 100% auto; }
   #home .panel {
-    background: #74c7d5;
-    border: 0;
-    margin-top: 400px;
-    margin-bottom: 300px; }
+    /*background: $blue-lightest;*/
+    /*background: rgba(255,255,255,0.3);*/
+    background: rgba(116, 199, 213, 0.8);
+    border: 0; }
     #home .panel .title-left, #home .panel .title-right {
       color: #ffffff;
       display: inline-block; }
@@ -134,13 +146,41 @@ h2 {
     background-size: 100% auto;
     background-position: 0 10%; }
     #home .panel {
-      margin-top: 150px;
-      margin-bottom: 150px; } }
+      margin-top: 50px;
+      margin-bottom: 10px; }
+      #home .panel .title-left {
+        text-align: center; }
+      #home .panel .title-right {
+        font-size: 40px; } }
+
+@media only screen and (min-width:40.063em) and (max-width:64em) {
+  #home {
+    background-size: 100% auto;
+    background-position: 0 10%; }
+    #home .panel {
+      margin-top: 30px;
+      margin-bottom: 0px; } }
+
+@media only screen and (min-width:64.063em) and (max-width:90em) {
+  #home {
+    background-size: 100% auto;
+    background-position: 0 10%; }
+    #home .panel {
+      margin-top: 175px;
+      margin-bottom: 155px; } }
+
+@media only screen and (min-width:90.063em) {
+  #home {
+    background-size: 100% auto;
+    background-position: 0 10%; }
+    #home .panel {
+      margin-top: 350px;
+      margin-bottom: 250px; } }
 
 /* ABOUT */
 #about {
   background: #665464;
-  background: url("../images/bg-about.jpg") no-repeat 50% 0; }
+  background-size: 100% auto; }
   #about .panel {
     background: transparent;
     border: 0; }
@@ -219,11 +259,14 @@ h2 {
         -webkit-transform: scale(1.2);
         transform: scale(1.2); }
 
+@media only screen and (min-width:40.063em) {
+  #about {
+    background: url("../images/bg-about.jpg") no-repeat 50% 0; } }
+
 /* SERVICES */
 #services {
-  background: #b34a4f; }
-  #services .row {
-    background: url("../images/bg-services.jpg") no-repeat 50% 0; }
+  background: #b34a4f;
+  background-size: 100% auto; }
   #services h1, #services h2, #services h3, #services p {
     color: #ffffff; }
   #services .panel {
@@ -265,10 +308,14 @@ h2 {
       top: 16px;
       left: 21px; }
 
+@media only screen and (min-width:40.063em) {
+  #services {
+    background: url("../images/bg-services.jpg") no-repeat 50% 0; } }
+
 /* SPACE */
 #space {
   background: #81a256;
-  background: url("../images/bg-space.jpg") no-repeat 50% 0; }
+  background-size: 100% auto; }
   #space .panel {
     background: transparent;
     border: 0; }
@@ -298,10 +345,14 @@ h2 {
     #space .spaces .tabs dd.active > a, #space .spaces .tabs .tab-title.active > a {
       background: #f5c149; }
 
+@media only screen and (min-width:40.063em) {
+  #space {
+    background: url("../images/bg-space.jpg") no-repeat 50% 0; } }
+
 /* CONTACT */
 #contact {
   background: #75b4aa;
-  background: url("../images/bg-contact.jpg") no-repeat 50% 0; }
+  background-size: 100% auto; }
   #contact .panel {
     background: transparent;
     border: 0; }
@@ -359,6 +410,10 @@ h2 {
     #contact .form input[type="submit"].button:hover {
       margin-top: 3px;
       border: 0; }
+
+@media only screen and (min-width:40.063em) {
+  #contact {
+    background: url("../images/bg-contact.jpg") no-repeat 50% 0; } }
 
 /* SPACE */
 /* CONTACT */
