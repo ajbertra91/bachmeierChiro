@@ -6,7 +6,7 @@ body, h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-align: center; }
   body p, body li, h1 p, h1 li, h2 p, h2 li, h3 p, h3 li, h4 p, h4 li, h5 p, h5 li, h6 p, h6 li {
-    font-size: 10px; }
+    font-size: 14px; }
 
 h1, h3 {
   font-weight: 100;
@@ -20,9 +20,9 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   h1 {
-    font-size: 30px; }
+    font-size: 34px; }
   h2 {
-    font-size: 14px; } }
+    font-size: 20px; } }
 
 /* CARD COMPONENT */
 .card {
@@ -135,6 +135,7 @@ h1, h3 {
       color: #ffffff;
       display: inline-block; }
     #home .panel .title-left {
+      font-size: 30px;
       text-align: right; }
     #home .panel .title-right {
       font-size: 70px;
@@ -179,8 +180,7 @@ h1, h3 {
 
 /* ABOUT */
 #about {
-  background: #665464;
-  background-size: 100% auto; }
+  background: #665464; }
   #about .panel {
     background: transparent;
     border: 0; }
@@ -261,12 +261,12 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #about {
-    background: url("../images/bg-about.jpg") no-repeat 50% 0; } }
+    background: url("../images/bg-about.jpg") no-repeat 50% 0;
+    background-size: 100% auto; } }
 
 /* SERVICES */
 #services {
-  background: #b34a4f;
-  background-size: 100% auto; }
+  background: #b34a4f; }
   #services h1, #services h2, #services h3, #services p {
     color: #ffffff; }
   #services .panel {
@@ -310,12 +310,12 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #services {
-    background: url("../images/bg-services.jpg") no-repeat 50% 0; } }
+    background: url("../images/bg-services.jpg") no-repeat 50% 0;
+    background-size: 100% auto; } }
 
 /* SPACE */
 #space {
-  background: #81a256;
-  background-size: 100% auto; }
+  background: #81a256; }
   #space .panel {
     background: transparent;
     border: 0; }
@@ -347,12 +347,12 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #space {
-    background: url("../images/bg-space.jpg") no-repeat 50% 0; } }
+    background: url("../images/bg-space.jpg") no-repeat 50% 0;
+    background-size: 100% auto; } }
 
 /* CONTACT */
 #contact {
-  background: #75b4aa;
-  background-size: 100% auto; }
+  background: #75b4aa; }
   #contact .panel {
     background: transparent;
     border: 0; }
@@ -413,7 +413,8 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #contact {
-    background: url("../images/bg-contact.jpg") no-repeat 50% 0; } }
+    background: url("../images/bg-contact.jpg") no-repeat 50% 0;
+    background-size: 100% auto; } }
 
 /* SPACE */
 /* CONTACT */

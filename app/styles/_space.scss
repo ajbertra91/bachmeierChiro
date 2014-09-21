@@ -1,7 +1,6 @@
 /* SPACE */
 #space {
   background: $green-dark;
-  background-size: 100% auto;
   .panel {
     background: transparent;
     border: 0;
@@ -50,5 +49,6 @@
 @media #{$medium-up} {
   #space {
     background: url("../images/bg-space.jpg") no-repeat 50% 0;
+    background-size: 100% auto;
   }
 }

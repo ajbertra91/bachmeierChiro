@@ -1,7 +1,6 @@
 /* ABOUT */
 #about {
   background: $purple;
-  background-size: 100% auto;
   .panel {
     background: transparent;
     border: 0;
@@ -97,5 +96,6 @@
 @media #{$medium-up} {
   #about {
     background: url("../images/bg-about.jpg") no-repeat 50% 0;
+    background-size: 100% auto;
   }
 }

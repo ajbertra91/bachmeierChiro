@@ -1,7 +1,6 @@
 /* SERVICES */
 #services {
   background: $pink-dark;
-  background-size: 100% auto;
   h1,h2,h3,p {
     color: $white;
   }
@@ -56,5 +55,6 @@
 @media #{$medium-up} {
   #services {
     background: url("../images/bg-services.jpg") no-repeat 50% 0;
+    background-size: 100% auto;
   }
 }
