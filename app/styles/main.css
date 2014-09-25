@@ -344,6 +344,73 @@ h1, h3 {
         background: #f5c149; }
     #space .spaces .tabs dd.active > a, #space .spaces .tabs .tab-title.active > a {
       background: #f5c149; }
+  #space .spaces #panel-yoga-schedule > div, #space .spaces #panel-gallery ul {
+    margin-top: 30px; }
+  #space .spaces #panel-gallery li {
+    position: relative; }
+    @media only screen and (max-width: 40em) {
+      #space .spaces #panel-gallery li {
+        margin-bottom: 10px; } }
+    #space .spaces #panel-gallery li:hover {
+      cursor: pointer; }
+      #space .spaces #panel-gallery li:hover .overlay {
+        opacity: 0.7; }
+      #space .spaces #panel-gallery li:hover .pic-title {
+        height: 4em; }
+  #space .spaces #panel-gallery .overlay {
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+    height: 200px;
+    width: 200px;
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  #space .spaces #panel-gallery .pic-title {
+    transition: height 0.2s ease-in-out;
+    background: #ffffff;
+    color: #000;
+    line-height: 3em;
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    margin: 0 10px; }
+    #space .spaces #panel-gallery .pic-title:before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      margin-left: -14px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 14px 16px 14px;
+      border-color: transparent transparent #ffffff transparent; }
+  #space .spaces .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #bbb;
+    width: 100%; }
+    #space .spaces .tg th, #space .spaces .tg td {
+      border: 1px solid #bbb;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      overflow: hidden;
+      word-break: normal; }
+    #space .spaces .tg th {
+      font-weight: normal;
+      padding: 10px 5px;
+      background-color: #a1ca6c;
+      color: #493F3F; }
+    #space .spaces .tg td {
+      padding: 10px 5px;
+      background-color: #E0FFEB;
+      color: #594F4F; }
+    #space .spaces .tg .tg-e3zv {
+      font-weight: bold; }
 
 @media only screen and (min-width:40.063em) {
   #space {
@@ -378,23 +445,25 @@ h1, h3 {
     text-decoration: underline; }
     #contact .information .value a:hover {
       text-decoration: none; }
-  #contact .form input[type="text"], #contact .form textarea {
+  #contact .form label span {
+    display: none; }
+  #contact .form input[type="text"], #contact .form input[type="email"], #contact .form textarea {
     background: #68a097;
     border-radius: 4px;
     border: 0;
     box-shadow: none;
     color: #75b4aa; }
-    #contact .form input[type="text"]::-webkit-input-placeholder, #contact .form textarea::-webkit-input-placeholder {
+    #contact .form input[type="text"]::-webkit-input-placeholder, #contact .form input[type="email"]::-webkit-input-placeholder, #contact .form textarea::-webkit-input-placeholder {
       color: #75b4aa; }
-    #contact .form input[type="text"]:-moz-placeholder, #contact .form textarea:-moz-placeholder {
+    #contact .form input[type="text"]:-moz-placeholder, #contact .form input[type="email"]:-moz-placeholder, #contact .form textarea:-moz-placeholder {
       /* Firefox 18- */
       color: #75b4aa; }
-    #contact .form input[type="text"]::-moz-placeholder, #contact .form textarea::-moz-placeholder {
+    #contact .form input[type="text"]::-moz-placeholder, #contact .form input[type="email"]::-moz-placeholder, #contact .form textarea::-moz-placeholder {
       /* Firefox 19+ */
       color: #75b4aa; }
-    #contact .form input[type="text"]:-ms-input-placeholder, #contact .form textarea:-ms-input-placeholder {
+    #contact .form input[type="text"]:-ms-input-placeholder, #contact .form input[type="email"]:-ms-input-placeholder, #contact .form textarea:-ms-input-placeholder {
       color: #75b4aa; }
-    #contact .form input[type="text"]:active, #contact .form input[type="text"]:focus, #contact .form textarea:active, #contact .form textarea:focus {
+    #contact .form input[type="text"]:active, #contact .form input[type="text"]:focus, #contact .form input[type="email"]:active, #contact .form input[type="email"]:focus, #contact .form textarea:active, #contact .form textarea:focus {
       background: #ffffff;
       color: black; }
   #contact .form textarea {

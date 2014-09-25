@@ -191,49 +191,100 @@
                       <li>Taekwondo classes coming soon!</li>
                     </ul>
                     <div class="spaces">
-                      <h3>Spaces</h3>
+                      <h3>Gallery and Schedule</h3>
                       <dl class="tabs" data-tab>
-                        <dd class="active"><a href="#panel-all">All</a></dd>
-                        <dd><a href="#panel-medical">Medical</a></dd>
-                        <dd><a href="#panel-yoga">Yoga</a></dd>
-                        <dd><a href="#panel-massage">Massage</a></dd>
+                        <dd class="active"><a href="#panel-gallery">Gallery</a></dd>
+                        <dd><a href="#panel-yoga-schedule">Yoga Schedule</a></dd>
                       </dl>
                       <div class="tabs-content">
-                        <div class="content active" id="panel-all">
+                        <div class="content active" id="panel-gallery">
                           <ul class="large-block-grid-4">
                             <li>
                               <div class="overlay"></div>
-                              <div class="picture"></div>
-                              <div class="pic-title"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
                             </li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
+                          </ul>
+
+                          <ul class="large-block-grid-4">
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
+                            <li>
+                              <div class="overlay"></div>
+                              <div class="picture">
+                                <img src="http://placehold.it/200x200">
+                              </div>
+                              <div class="pic-title">Chirpractic Room</div>
+                            </li>
                           </ul>
                         </div>
-                        <div class="content" id="panel-medical">
-                          <ul class="large-block-grid-4">
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                          </ul>
-                        </div>
-                        <div class="content" id="panel-yoga">
-                          <ul class="large-block-grid-4">
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                          </ul>
-                        </div>
-                        <div class="content" id="panel-massage">
-                          <ul class="large-block-grid-4">
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                            <li><!-- Your content goes here --></li>
-                          </ul>
+                        <div class="content" id="panel-yoga-schedule">
+                          <div class="table-wrapper">
+                            <table class="tg" summary="Schedule for yoga classes.">
+                              <tr>
+                                <th class="tg-031e"></th>
+                                <th class="tg-e3zv">SUN</th>
+                                <th class="tg-e3zv">MON</th>
+                                <th class="tg-e3zv">TUE</th>
+                                <th class="tg-e3zv">WED</th>
+                                <th class="tg-e3zv">THU</th>
+                                <th class="tg-e3zv">FRI</th>
+                                <th class="tg-e3zv">SAT</th>
+                              </tr>
+                              <tr>
+                                <td class="tg-031e">Yoga</td>
+                                <td class="tg-031e"></td>
+                                <td class="tg-031e">7am</td>
+                                <td class="tg-031e">7am</td>
+                                <td class="tg-031e">7am</td>
+                                <td class="tg-031e">7am</td>
+                                <td class="tg-031e">7am</td>
+                                <td class="tg-031e"></td>
+                              </tr>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -270,18 +321,27 @@
                     </div>
                     <div class="form small-12 medium-6 large-6 columns">
                       <h2>Ask a question</h2>
-                      <form action="#">
+                      <form action="sendEmail.php" method="post" data-abide>
                         <div class="row">
                           <div class="small-12 medium-6 large-6 columns">
-                            <input type="text" placeholder="Name">
+                            <label><span>Your name <small>required</small></span>
+                              <input type="text" name="name" placeholder="Full name" required pattern="[a-zA-Z]+ [a-zA-Z]+">
+                            </label>
+                            <small class="error">Full name required; must be a string.</small>
                           </div>
                           <div class="small-12 medium-6 large-6 columns">
-                            <input type="text" placeholder="Subject">
+                            <label><span>Email <small>required</small></span>
+                              <input type="email" name="email" placeholder="Email" required>
+                            </label>
+                            <small class="error">An email address is required.</small>
                           </div>
                         </div>
                         <div class="row">
                           <div class="small-12 medium-12 large-12 columns">
-                            <textarea type="textarea" placeholder="Your Question"></textarea>
+                            <label><span>Email <small>required</small></span>
+                              <textarea type="textarea" name="comments" placeholder="Your Question" required></textarea>
+                            </label>
+                            <small class="error">A comment or question is required.</small>
                           </div>
                         </div>
                         <div class="row">

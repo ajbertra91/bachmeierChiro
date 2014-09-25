@@ -43,7 +43,13 @@
     }
   }
   .form {
+    label {
+      span {
+        display: none;
+      }
+    }
     input[type="text"],
+    input[type="email"],
     textarea {
       background: $teal-dark;
       border-radius: 4px;
