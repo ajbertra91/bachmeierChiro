@@ -14,7 +14,10 @@
       display: inline-block;
     }
   }
-  .spaces {
+  .spaces-times {
+    background: red;
+    padding-top: 20px;
+    border-top: 1px solid $green-dark;
     h3 {
       color: $white;
       float: left;
