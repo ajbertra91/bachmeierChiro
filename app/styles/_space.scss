@@ -15,9 +15,9 @@
     }
   }
   .spaces-times {
-    background: red;
-    padding-top: 20px;
-    border-top: 1px solid $green-dark;
+    padding: 20px 0 5px;
+    border-top: 1px solid $green;
+    border-bottom: 1px solid $green;
     h3 {
       color: $white;
       float: left;
@@ -107,6 +107,7 @@
       border-collapse: collapse;
       border-spacing: 0;
       border-color:#bbb;
+      margin-bottom: 0;
       width: 100%;
       th, td {
         border: 1px solid #bbb;
@@ -128,6 +129,23 @@
       }
       .tg-e3zv {
         font-weight: bold;
+      }
+    }
+    .notes {
+      font-size: 12px;
+      font-weight: 100;
+      text-align: left;
+      padding: 0;
+      margin: 10px 0 0;
+      &.right {
+        font-weight: 400;
+        a {
+          color: $black;
+          text-decoration: underline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
       }
     }
   }

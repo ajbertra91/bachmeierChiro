@@ -325,92 +325,110 @@ h1, h3 {
       margin-bottom: 5px; }
     #space .panel ul {
       display: inline-block; }
-  #space .spaces h3 {
-    color: #ffffff;
-    float: left;
-    font-size: 14px;
-    font-weight: 400; }
-  #space .spaces .tabs {
-    float: right; }
-    #space .spaces .tabs dd > a, #space .spaces .tabs .tab-title > a {
-      background: transparent;
-      border-radius: 4px;
+  #space .spaces-times {
+    padding: 20px 0 5px;
+    border-top: 1px solid #a1ca6c;
+    border-bottom: 1px solid #a1ca6c; }
+    #space .spaces-times h3 {
       color: #ffffff;
-      padding: 5px 10px;
-      min-width: 80px;
-      font-size: 12px;
-      transition: background-color 0.2s ease; }
-      #space .spaces .tabs dd > a:hover, #space .spaces .tabs .tab-title > a:hover {
-        background: #f5c149; }
-    #space .spaces .tabs dd.active > a, #space .spaces .tabs .tab-title.active > a {
-      background: #f5c149; }
-  #space .spaces #panel-yoga-schedule > div, #space .spaces #panel-gallery ul {
-    margin-top: 30px; }
-  #space .spaces #panel-gallery li {
-    position: relative; }
-    @media only screen and (max-width: 40em) {
-      #space .spaces #panel-gallery li {
-        margin-bottom: 10px; } }
-    #space .spaces #panel-gallery li:hover {
-      cursor: pointer; }
-      #space .spaces #panel-gallery li:hover .overlay {
-        opacity: 0.7; }
-      #space .spaces #panel-gallery li:hover .pic-title {
-        height: 4em; }
-  #space .spaces #panel-gallery .overlay {
-    background-color: #000;
-    transition: opacity 0.2s ease-in-out;
-    opacity: 0;
-    height: 200px;
-    width: 200px;
-    margin: 0 10px;
-    position: absolute;
-    top: 0;
-    left: 0; }
-  #space .spaces #panel-gallery .pic-title {
-    transition: height 0.2s ease-in-out;
-    background: #ffffff;
-    color: #000;
-    line-height: 3em;
-    height: 3em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    margin: 0 10px; }
-    #space .spaces #panel-gallery .pic-title:before {
-      content: '';
-      position: absolute;
-      top: -16px;
-      left: 50%;
-      margin-left: -14px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 14px 16px 14px;
-      border-color: transparent transparent #ffffff transparent; }
-  #space .spaces .tg {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-color: #bbb;
-    width: 100%; }
-    #space .spaces .tg th, #space .spaces .tg td {
-      border: 1px solid #bbb;
-      font-family: Arial, sans-serif;
+      float: left;
       font-size: 14px;
-      overflow: hidden;
-      word-break: normal; }
-    #space .spaces .tg th {
-      font-weight: normal;
-      padding: 10px 5px;
-      background-color: #a1ca6c;
-      color: #493F3F; }
-    #space .spaces .tg td {
-      padding: 10px 5px;
-      background-color: #E0FFEB;
-      color: #594F4F; }
-    #space .spaces .tg .tg-e3zv {
-      font-weight: bold; }
+      font-weight: 400; }
+    #space .spaces-times .tabs {
+      float: right; }
+      #space .spaces-times .tabs dd > a, #space .spaces-times .tabs .tab-title > a {
+        background: transparent;
+        border-radius: 4px;
+        color: #ffffff;
+        padding: 5px 10px;
+        min-width: 80px;
+        font-size: 12px;
+        transition: background-color 0.2s ease; }
+        #space .spaces-times .tabs dd > a:hover, #space .spaces-times .tabs .tab-title > a:hover {
+          background: #f5c149; }
+      #space .spaces-times .tabs dd.active > a, #space .spaces-times .tabs .tab-title.active > a {
+        background: #f5c149; }
+    #space .spaces-times #panel-yoga-schedule > div, #space .spaces-times #panel-gallery ul {
+      margin-top: 30px; }
+    #space .spaces-times #panel-gallery li {
+      position: relative; }
+      @media only screen and (max-width: 40em) {
+        #space .spaces-times #panel-gallery li {
+          margin-bottom: 10px; } }
+      #space .spaces-times #panel-gallery li:hover {
+        cursor: pointer; }
+        #space .spaces-times #panel-gallery li:hover .overlay {
+          opacity: 0.7; }
+        #space .spaces-times #panel-gallery li:hover .pic-title {
+          height: 4em; }
+    #space .spaces-times #panel-gallery .overlay {
+      background-color: #000;
+      transition: opacity 0.2s ease-in-out;
+      opacity: 0;
+      height: 200px;
+      width: 200px;
+      margin: 0 10px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #space .spaces-times #panel-gallery .pic-title {
+      transition: height 0.2s ease-in-out;
+      background: #ffffff;
+      color: #000;
+      line-height: 3em;
+      height: 3em;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      margin: 0 10px; }
+      #space .spaces-times #panel-gallery .pic-title:before {
+        content: '';
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        margin-left: -14px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 14px 16px 14px;
+        border-color: transparent transparent #ffffff transparent; }
+    #space .spaces-times .tg {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border-color: #bbb;
+      margin-bottom: 0;
+      width: 100%; }
+      #space .spaces-times .tg th, #space .spaces-times .tg td {
+        border: 1px solid #bbb;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        word-break: normal; }
+      #space .spaces-times .tg th {
+        font-weight: normal;
+        padding: 10px 5px;
+        background-color: #a1ca6c;
+        color: #493F3F; }
+      #space .spaces-times .tg td {
+        padding: 10px 5px;
+        background-color: #E0FFEB;
+        color: #594F4F; }
+      #space .spaces-times .tg .tg-e3zv {
+        font-weight: bold; }
+    #space .spaces-times .notes {
+      font-size: 12px;
+      font-weight: 100;
+      text-align: left;
+      padding: 0;
+      margin: 10px 0 0; }
+      #space .spaces-times .notes.right {
+        font-weight: 400; }
+        #space .spaces-times .notes.right a {
+          color: #000;
+          text-decoration: underline; }
+          #space .spaces-times .notes.right a:hover {
+            text-decoration: none; }
 
 @media only screen and (min-width:40.063em) {
   #space {
