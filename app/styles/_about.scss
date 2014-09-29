@@ -95,7 +95,7 @@
 
 @media #{$medium-up} {
   #about {
-    background: url("../images/bg-about.jpg") no-repeat 50% 0;
+    background: url("../images/bg-about.jpg") repeat-y 50% 0 $purple;
     background-size: 100% auto;
   }
 }

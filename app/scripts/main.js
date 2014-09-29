@@ -132,4 +132,26 @@ $(function() {
   }), { offset: 60 };
   
 
+  // =========================================
+  // Random home page image
+  // =========================================
+  function random_imglink() {
+    
+    var myImages = [];
+    //specify random images below. You can have as many as you wish
+    myImages[1]='dad-daughter.jpg';
+    myImages[2]='drdixie_yoga1.jpg';
+    myImages[3]='drdixie_yoga2.jpg';
+    myImages[4]='drdixie_yoga3.jpg';
+    var ry = Math.floor(Math.random() * myImages.length);
+
+    if (ry === 0) {
+      ry = 1;
+      $('#home').css('background', 'url("./images/' + myImages[ry] + '") no-repeat 50% 0').css('background-size', '100% auto');
+    } else {
+      $('#home').css('background', 'url("./images/' + myImages[ry] + '") no-repeat 50% 0 ').css('background-size', '100% auto');
+    }
+  }
+  random_imglink();
+
 });

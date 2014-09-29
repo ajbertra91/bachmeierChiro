@@ -153,7 +153,10 @@
 
 @media #{$medium-up} {
   #space {
-    background: url("../images/bg-space.jpg") no-repeat 50% 0;
+    background-color: $purple;
+    background-image: url("../images/bg-space.jpg");
+    backgrounnd-repeat: repeat-y;
+    background-position: 50% 0;
     background-size: 100% auto;
   }
 }

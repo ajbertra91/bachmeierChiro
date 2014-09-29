@@ -54,7 +54,7 @@
 
 @media #{$medium-up} {
   #services {
-    background: url("../images/bg-services.jpg") no-repeat 50% 0;
+    background: url("../images/bg-services.jpg") repeat-y 50% 0;
     background-size: 100% auto;
   }
 }

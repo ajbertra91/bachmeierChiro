@@ -124,7 +124,7 @@ h1, h3 {
 /* HOME */
 #home {
   background: gray;
-  background: url("../images/dad-daughter.jpg") no-repeat 50% 0;
+  background: url("../images/drdixie_yoga1.jpg") no-repeat 50% 0;
   background-size: 100% auto; }
   #home .panel {
     /*background: $blue-lightest;*/
@@ -261,7 +261,7 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #about {
-    background: url("../images/bg-about.jpg") no-repeat 50% 0;
+    background: url("../images/bg-about.jpg") repeat-y 50% 0 #665464;
     background-size: 100% auto; } }
 
 /* SERVICES */
@@ -310,7 +310,7 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #services {
-    background: url("../images/bg-services.jpg") no-repeat 50% 0;
+    background: url("../images/bg-services.jpg") repeat-y 50% 0;
     background-size: 100% auto; } }
 
 /* SPACE */
@@ -432,7 +432,10 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #space {
-    background: url("../images/bg-space.jpg") no-repeat 50% 0;
+    background-color: #665464;
+    background-image: url("../images/bg-space.jpg");
+    backgrounnd-repeat: repeat-y;
+    background-position: 50% 0;
     background-size: 100% auto; } }
 
 /* CONTACT */
@@ -500,8 +503,9 @@ h1, h3 {
 
 @media only screen and (min-width:40.063em) {
   #contact {
-    background: url("../images/bg-contact.jpg") no-repeat 50% 0;
-    background-size: 100% auto; } }
+    background: url("../images/bg-contact.jpg") repeat-y 50% 0;
+    background-size: 100% auto;
+    min-height: 1000px; } }
 
 /* SPACE */
 /* CONTACT */
