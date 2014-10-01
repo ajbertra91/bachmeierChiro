@@ -56,26 +56,26 @@
         @media #{$small-only} {
           margin-bottom: 10px;
         }
-        &:hover {
+        &:before {
+          content: '';
           cursor: pointer;
-          .overlay {
+          background-color: #000;
+          display: block;
+          transition: opacity 0.2s ease-in-out;
+          opacity: 0;
+          height: 200px;
+          width: 200px;
+          margin: 0 10px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          &:hover {
             opacity: 0.7;
           }
           .pic-title {
             height: 4em;
           }
         }
-      }
-      .overlay {
-        background-color: #000;
-        transition: opacity 0.2s ease-in-out;
-        opacity: 0;
-        height: 200px;
-        width: 200px;
-        margin: 0 10px;
-        position: absolute;
-        top: 0;
-        left: 0;
       }
       .pic-title {
         transition: height 0.2s ease-in-out;
