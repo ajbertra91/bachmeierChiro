@@ -1,3 +1,5 @@
+'use strict';
+
 $(function() {
   // init foundation
   $(document).foundation();
@@ -40,34 +42,34 @@ $(function() {
   var nav = $('.top-bar-section');
   var navLinks = nav.find('li');
 
-  $(".home-btn").click(function() {
+  $('.home-btn').click(function() {
     activateHomeTab();
     $('html, body').animate({
-        scrollTop: $("#home").offset().top
+        scrollTop: $('#home').offset().top
     }, 1000);
   });
-  $(".services-btn").click(function() {
+  $('.services-btn').click(function() {
     activateServicesTab();
     $('html, body').animate({
-        scrollTop: $("#services").offset().top
+        scrollTop: $('#services').offset().top
     }, 1000);
   });
-  $(".about-btn").click(function() {
+  $('.about-btn').click(function() {
     activateAboutTab();
     $('html, body').animate({
-        scrollTop: $("#about").offset().top
+        scrollTop: $('#about').offset().top
     }, 1000);
   });
-  $(".space-btn").click(function() {
+  $('.space-btn').click(function() {
     activateSpaceTab();
     $('html, body').animate({
-        scrollTop: $("#space").offset().top
+        scrollTop: $('#space').offset().top
     }, 1000);
   });
-  $(".contact-btn").click(function() {
+  $('.contact-btn').click(function() {
     activateContactTab();
     $('html, body').animate({
-        scrollTop: $("#contact").offset().top
+        scrollTop: $('#contact').offset().top
     }, 1000);
   });
 
@@ -135,7 +137,7 @@ $(function() {
   // =========================================
   // Random home page image
   // =========================================
-  function random_imglink() {
+  function randomImgLink() {
     
     var myImages = [];
     //specify random images below. You can have as many as you wish
@@ -147,11 +149,11 @@ $(function() {
 
     if (ry === 0) {
       ry = 1;
-      $('#home').css('background', 'url("./images/' + myImages[ry] + '") no-repeat 50% 0').css('background-size', '100% auto');
+      $('#home').css('background', 'url(./images/' + myImages[ry] + ') no-repeat 50% 0').css('background-size', '100% auto');
     } else {
-      $('#home').css('background', 'url("./images/' + myImages[ry] + '") no-repeat 50% 0 ').css('background-size', '100% auto');
+      $('#home').css('background', 'url(./images/' + myImages[ry] + ') no-repeat 50% 0 ').css('background-size', '100% auto');
     }
   }
-  random_imglink();
+  randomImgLink();
 
 });

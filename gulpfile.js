@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var gutil = require('gulp-util');
+var cache = require('gulp-cache');
 
 // load plugins
 var $ = require('gulp-load-plugins')();
@@ -107,6 +108,10 @@ gulp.task('wiredep', function () {
             exclude: ['bootstrap-sass-official']
         }))
         .pipe(gulp.dest('app'));
+});
+
+gulp.task('clear', function (done) {
+    return cache.clearAll(done);
 });
 
 gulp.task('watch', ['serve'], function () {
