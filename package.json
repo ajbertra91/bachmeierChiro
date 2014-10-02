@@ -1,10 +1,12 @@
 {
-"name": "bachmeierchiro",
+  "name": "bachmeierchiro",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "browser-sync": "^0.9.1",
     "gulp": "^3.6.2",
+    "gulp-autoprefixer": "^1.0.1",
     "gulp-bower-files": "^0.2.3",
     "gulp-cache": "^0.2.2",
     "gulp-clean": "^0.2.4",
@@ -23,7 +25,6 @@
     "jshint-stylish": "^0.2.0",
     "opn": "^0.1.2",
     "wiredep": "^1.7.0",
-    "gulp-autoprefixer": "^0.0.7",
     "gulp-imagemin": "^1.0.1",
     "streamqueue": "^0.1.0"
   },
