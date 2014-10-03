@@ -141,10 +141,9 @@ $(function() {
     
     var myImages = [];
     //specify random images below. You can have as many as you wish
-    myImages[1]='dad-daughter.jpg';
-    myImages[2]='drdixie_yoga1.jpg';
-    myImages[3]='drdixie_yoga2.jpg';
-    myImages[4]='drdixie_yoga3.jpg';
+    myImages[1]='drdixie_yoga1.jpg';
+    myImages[2]='drdixie_yoga2.jpg';
+    myImages[3]='drdixie_yoga3.jpg';
     var ry = Math.floor(Math.random() * myImages.length);
 
     if (ry === 0) {
