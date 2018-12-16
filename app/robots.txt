@@ -1,8 +1,0 @@
-# robotstxt.org/
-
-User-agent: *
-Allow: /
-
-Disallow: /bower_components
-Disallow: /scripts
-Disallow: /styles
