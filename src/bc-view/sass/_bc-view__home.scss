@@ -1,0 +1,53 @@
+@import '../config/_variables.scss';
+
+bc-view {
+    #home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $home;
+        .panel {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 95%;
+            background: rgba(116, 199, 213, 0.8);
+            margin: 10vh 0;
+        }
+        .title-right,
+        .title-left {
+            text-align: center;
+        }
+        .title-left {
+            line-height: 1em;
+            font-size: 30px;
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+        .title-right {
+            font-size: 70px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        #home {
+            .panel {
+                flex-flow: row;
+                height: 118px;
+                width: 553px;
+                margin: 25vh 0;
+            }
+            .title-left {
+                text-align: right;
+            }
+            .title-right {
+                text-align: left;
+            }
+        }
+    }
+}
+

@@ -20,8 +20,8 @@ class BcHeader extends HTMLElement {
 
     addEventListeners() {
         this.delegateEl = delegate(this);
-        this.delegateEl.on('click', '.bc-header__link', e => {
-            console.log('e: ', e);
+        this.delegateEl.on('click', '.bc-header__link', () => {
+            this.toggleMobileNav();
         });
     }
 
@@ -44,12 +44,15 @@ class BcHeader extends HTMLElement {
     }
 
     toggleMobileNav() {
+        const mobileNavEl = this.querySelector('.bc-header__container');
         const mobileNavLinksEl = this.querySelector('.bc-header__nav-links');
         const mobileNavIconEl = this.querySelector('.bc-header__mobile-nav-icon');
         if (mobileNavLinksEl.classList.contains('is-active')) {
+            mobileNavEl.classList.remove('is-active');
             mobileNavLinksEl.classList.remove('is-active');
             mobileNavIconEl.classList.remove('is-active');
         } else {
+            mobileNavEl.classList.add('is-active');
             mobileNavLinksEl.classList.add('is-active');
             mobileNavIconEl.classList.add('is-active');
         }

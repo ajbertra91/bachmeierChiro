@@ -1,0 +1,18 @@
+@import '../config/_variables.scss';
+
+bc-view {
+    #about {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $about;
+    }
+
+    @media screen and (min-width: 768px) {
+        #home {
+
+        }
+    }
+}
+
