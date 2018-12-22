@@ -1,2 +1,7 @@
 @import './sass/_bc-view__home.scss';
+@import './sass/_bc-view__services.scss';
 @import './sass/_bc-view__about.scss';
+
+bc-view {
+    display: block;
+}

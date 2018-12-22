@@ -1,4 +1,5 @@
 import {bind} from 'hyperhtml';
+import {camelize} from '../common/utils';
 import {getLinks} from '../config/bc-header__config';
 
 import '../bc-header/bc-header';
@@ -21,7 +22,7 @@ class BcApp extends HTMLElement {
 
     attributeChangedCallback(attr, oldValue, newValue) {
         if (oldValue !== newValue) {
-            this[attr] = newValue;
+            this[camelize(attr)] = newValue;
             this.render(this.html);
         }
     }
@@ -38,6 +39,7 @@ class BcApp extends HTMLElement {
         return html`
             <bc-header links=${this.links}></bc-header>
             <bc-view type="home"></bc-view>
+            <bc-view type="services"></bc-view>
             <bc-view type="about"></bc-view>
         `;
     }

@@ -1,10 +1,11 @@
 import {bind,wire} from 'hyperhtml';
+import {camelize} from '../common/utils';
 import delegate from 'dom-delegate';
 
 import './_bc-header.scss';
 
 class BcHeader extends HTMLElement {
-  static get observedAttributes() { return ['links']; }
+    static get observedAttributes() { return ['links']; }
 
     connectedCallback() {
         this.connected = true;
@@ -31,7 +32,7 @@ class BcHeader extends HTMLElement {
 
     attributeChangedCallback(attr, oldValue, newValue) {
         if (oldValue !== newValue) {
-            this[attr] = newValue;
+            this[camelize(attr)] = newValue;
             this.render(this.html);
         }
     }

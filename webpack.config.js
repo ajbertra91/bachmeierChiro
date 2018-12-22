@@ -42,10 +42,10 @@ module.exports = {
                     loader: 'css-loader',
                     options: {}
                 },
-                {
-                    loader: 'resolve-url-loader',
-                    options: {}
-                },
+                // {
+                //     loader: 'resolve-url-loader',
+                //     options: {}
+                // },
                 {
                     loader: 'sass-loader',
                     options: {
@@ -53,6 +53,12 @@ module.exports = {
                         sourceMapContents: false
                     }
                 }
+            ]
+        },
+        {
+            test: /\.(png|svg|jpg|gif)$/,
+            use: [
+                'file-loader'
             ]
         }]
     }
