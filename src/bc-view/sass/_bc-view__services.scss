@@ -1,0 +1,45 @@
+@import '../config/_variables.scss';
+
+bc-view {
+    #services {
+        background: url('../images/bg-services.jpg') repeat-y 50% 0 $services;
+        background-size: 100% auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 120px;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        .bc-view__title {
+            font-size: 34px;
+            font-weight: 100;
+            text-transform: uppercase;
+            line-height: 1em;
+            margin-bottom: 0.625rem;
+        }
+
+        .bc-view__text {
+            color: $light-pink;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .bc-view__card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        #services {
+
+        }
+    }
+}
+

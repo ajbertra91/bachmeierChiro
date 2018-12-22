@@ -1,0 +1,71 @@
+bc-card[type="service"] {
+    background-color: rgb(200, 83, 90);
+    flex: 0 1 auto;
+    width: 220px;
+    height: 340px;
+    .bc-card__image-circle {
+        border: 4px solid #df5c64;
+        border-radius: 100%;
+        box-shadow: 0 0 0 3px #ffffff;
+        height: 100px;
+        width: 100px;
+        background: #ffffff;
+        margin: 10px auto 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .bc-card__image-container {
+            background: #fff;
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: auto;
+            height: auto;
+            border-radius: 0;
+        }
+    }
+    &.service-0 {
+        .bc-card__image-circle {
+            img {
+                width: 40px;
+            }
+        }
+    }
+    &.service-1 {
+        .bc-card__image-circle {
+            img {
+                width: 80px;
+            }
+        }
+    }
+    &.service-2 {
+        .bc-card__image-circle {
+            img {
+                width: 52px;
+            }
+        }
+    }
+    &.service-3 {
+        .bc-card__image-circle {
+            img {
+                width: 60px;
+            }
+        }
+    }
+    .bc-card__name {
+        font-size: 20px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    .bc-card__title {
+        display: none;
+    }
+    .bc-card__text {
+        text-align: center;
+    }
+}
